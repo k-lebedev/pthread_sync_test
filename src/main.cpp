@@ -252,7 +252,7 @@ int main(int argc, const char **argv) {
     Logger l;
     if (argc < 4) {
         _LOG_ERROR("thread count and/or lock count and/or locker_type are not specified");
-        puts("Usage: mutex_vs_rwlock thread_count lock_count mutex|rd_lock|wr_lock");
+        puts("Usage: pthread_sync_test thread_count lock_count mutex|rd_lock|wr_lock");
         return -1;
     }
     unsigned int thr_count = 0;
